@@ -1,0 +1,34 @@
+{
+    "image1": {
+        "data": "hwQMABEAAAAAAFAAAFdVAAcAAAAAAlUHcFdVcAcAAAAAAlVXcHclcgcAAAAAUnVXcCcicgcAAAAgcldXJ1IiAgAAAAAgUlVVdyIiAAAAAAAgUlVVdyIiAAAAAAAgcnVVIlIiAgAAAAAgcndVdycicgcAAAAAclUHd3clcgcAAAAAAHcHcFdVcAcAAAAAAAAAAFdVAAcAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "mario_left"
+    },
+    "]9dD#=%SF7R_U]TyjbM@": {
+        "data": "hwQQABAAAAAAAAAAVQAAAAAAAABVAAAAAAAAAFUAAAAAAAAAdwBwBwAAdwd3AHcHAHJVB3cHdwAgcndVdyciACBydVVyJyIAIFJVVSciIgAgUlVVd1IiACByV1d3IiIAAFJ1V3IiIgAAAlVXJyUCAFByVXcHIgIAUHVXdwAiAgBQdXcAcHcHAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "mario_jump"
+    },
+    "image3": {
+        "data": "hwQMABEAAAAAAAAAAFdVAAcAAAAAAHcHcFdVcAcAAAAAclUHd3clcgcAAAAgcndVdycicgcAAAAgcnVVIlIiAgAAAAAgUlVVdyIiAAAAAAAgUlVVdyIiAAAAAAAgcldXJ1IiAgAAAAAAUnVXcCcicgcAAAAAAlVXcHclcgcAAAAAAlUHcFdVcAcAAAAAAFAAAFdVAAcAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "mario_right"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Question block"
+    },
+    "anim1": {
+        "namespace": "myAnimations",
+        "id": "anim1",
+        "mimeType": "application/mkcd-animation",
+        "data": "ZmEwMDEwMDAxMDAwMDIwMDAwMDAwMGVlZWUwMDAwMDAwMDAwZTBlZWVlMGUwMDAwMDAwMGVlZWVlZWVlMDAwMDAwZTBlZWVlZWVlZTBlMDAwMGZlZWZlZWVlZmVlZjAwZTBlZWYxZWVlZTFmZWUwZWUwZWVmMWZmZmYxZmVlMGVlZWVlZjFlMTFlMWZlZWVlZWVlZTExZTExZTExZWVlZWVlZWVlZWVlZWVlZWVlZWVlMGVlZGVkZGRkZWRlZTBlMDAwMGRkZGRkZGRkMDAwMDAwZmZkZGRkZGRkZDBmMDBmMGZmZmZkZGRkZmYwMDAwZjBmZmZmZGZmZDBmMDAwMDAwZmZmZjBmZjAwMDAwMDAwMDAwMDBlZWVlMDAwMDAwMDAwMGUwZWVlZTBlMDAwMDAwMDBlZWVlZWVlZTAwMDAwMGUwZWVlZWVlZWUwZTAwMDBmZWVmZWVlZWZlZWYwMGUwZWVmMWVlZWUxZmVlMGVlMGVlZjFmZmZmMWZlZTBlZWVlZWYxZTExZTFmZWVlZWVlZWUxMWUxMWUxMWVlZWVlZWVlZWVlZWVlZWVlZWVlZTBlZWRlZGRkZGVkZWUwZTAwMDBkZGRkZGRkZDAwMDAwMGYwZGRkZGRkZGRmZjAwMDAwMGZmZGRkZGZmZmYwZjAwMDBmMGRmZmRmZmZmMGYwMDAwMDAwZmYwZmZmZjAw",
+        "displayName": "GoombaWalk"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
