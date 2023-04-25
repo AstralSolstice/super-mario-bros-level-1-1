@@ -1,5 +1,9 @@
 namespace SpriteKind {
+    export const Text = SpriteKind.create()
     export const qbloc = SpriteKind.create()
+    export const Coin = SpriteKind.create()
+    export const mushroom = SpriteKind.create()
+    export const fireflower = SpriteKind.create()
 }
 function GoombaSetup () {
     for (let value of tiles.getTilesByType(assets.tile`Goomba spawn tile`)) {
@@ -39,7 +43,24 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.qbloc, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
+    randomNumber = Math.randomRange(1, 3)
+    if (randomNumber == 1) {
+        // Release a coin
+        coin = sprites.create(assets.image`coin`, SpriteKind.Coin)
+        coin.setPosition(questionBlock.x, questionBlock.y - 16)
+        coin.setVelocity(0, -50)
+    } else if (randomNumber == 2) {
+        // Release a mushroom
+        mushroom = sprites.create(assets.image`power up mushrromm`, SpriteKind.mushroom)
+        mushroom.setPosition(questionBlock.x, questionBlock.y - 16)
+        mushroom.setVelocity(0, -50)
+    } else {
+        // Release a fire flower
+        fireFlower = sprites.create(assets.image`Fireflower`, SpriteKind.fireflower)
+        fireFlower.setPosition(questionBlock.x, questionBlock.y - 16)
+        fireFlower.setVelocity(0, -50)
+    }
+    questionBlock.destroy(effects.disintegrate, 500)
 })
 function MarioSetup () {
     info.setLife(3)
@@ -47,6 +68,13 @@ function MarioSetup () {
     controller.moveSprite(Mario, 100, 0)
     Mario.ay = 200
     scene.cameraFollowSprite(Mario)
+}
+function qbloc_setup () {
+    for (let value of tiles.getTilesByType(assets.tile`QuestionBlock`)) {
+        questionBlock = sprites.create(assets.image`qbloc`, SpriteKind.qbloc)
+        tiles.placeOnTile(questionBlock, value)
+        tiles.setTileAt(value, assets.tile`myTile8`)
+    }
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (sprite.x > 0 && !(sprite.isHittingTile(CollisionDirection.Bottom)) || sprite.y < otherSprite.top) {
@@ -62,17 +90,23 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         Mario.setFlag(SpriteFlag.GhostThroughSprites, false)
     }
 })
+let fireFlower: Sprite = null
+let mushroom: Sprite = null
+let questionBlock: Sprite = null
+let coin: Sprite = null
+let randomNumber = 0
 let Mario: Sprite = null
 let Goomba: Sprite = null
 tiles.setCurrentTilemap(tilemap`Level 1-1`)
 MarioSetup()
 GoombaSetup()
+qbloc_setup()
 game.onUpdate(function () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = randint(30, 60)
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = randint(-30, -60)
+    for (let value2 of sprites.allOfKind(SpriteKind.Enemy)) {
+        if (value2.isHittingTile(CollisionDirection.Left)) {
+            value2.vx = randint(30, 60)
+        } else if (value2.isHittingTile(CollisionDirection.Right)) {
+            value2.vx = randint(-30, -60)
         }
     }
 })

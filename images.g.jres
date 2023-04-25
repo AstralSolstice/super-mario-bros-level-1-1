@@ -19,6 +19,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Question block"
     },
+    "image4": {
+        "data": "hwQQABAAAABPRERERERE9FRVVVVVVVX1VF9VVVVV9fVUVVVVVVVV9VRVRFRVVVX1VEVE9FVVVfVURf//VVVV9VRFX1VERVT1VEVfRURP9PVURURE/1//9VRVRERfVVX1VFX//19VVfVUVVVVVVVV9VRfVVVVVfX1VFVVVVVVVfX//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "qbloc"
+    },
+    "image5": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAFBVVVVVBQBQVVVVVVVVBVVVREREVVVVVUVVVVVfVVVVRVVVVV9VVVVV////VVVVX1VVVVVVVfX/X1VVVVX1//D///////8PAPD/////DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "coin"
+    },
+    "image6": {
+        "data": "hwQQABAAAAAAAPD//w8AAADwLxIR8QAAAB8hIhHy/wDwESIiIvIRD/AhEhEiHxHxLyIRESEfEfEvIhERIf8f8S8iEREhHxHxLyIRESEfEfEfIRIRIv8f8R8RIiIiHxHx8BEhEiEfEfHwESEREfIRDwAfIRER8v8AAPAvEiHyAAAAAPD//w8AAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "power up mushrromm"
+    },
+    "image7": {
+        "data": "hwQQABAAAAAA8P8AAP8PAAAvIg/wZvYA8CIi8vBmZg/wQkTyAG9mDy9CRSIPb2b2L1RRJA/wZvYv9P8k////9i9UUSRvZmb2L1RRJG9mZvYv9P8k////9i9UUSQP8Gb2L0JFIg9vZvbwQkTyAG9mD/AiIvLwZmYPAC8iD/Bm9gAA8P8AAP8PAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Fireflower"
+    },
     "anim1": {
         "namespace": "myAnimations",
         "id": "anim1",
